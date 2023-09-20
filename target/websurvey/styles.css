@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+/* Reset styles */
+*::before, *::after, *, body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Typography */
+body {
+    font-family: 'Arial, sans-serif';
+    line-height: 1.6;
+    padding: 1.5rem 3rem; /* Thêm padding vào toàn bộ nội dung bên trong body */
+}
+
+h2.header {
+    font-size: 2rem; /* Adjust size as necessary */
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1rem; /* Adjust size as necessary */
+    margin-bottom: 1rem;
+}
+
+/* Layout */
+body, html {
+    height: 100%;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/* Logo */
+.logo {
+    width: 15rem;
+    height: 15rem;
+    margin-bottom: 2rem;
+}
+
+/* Form styling */
+.list__field, .checkBox__field, .contact__field {
+    margin-bottom: 1.5rem;
+}
+
+.list__field {
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.list__field label {
+    width: 80px; /* Điều chỉnh chiều rộng tối thiểu cho nhãn */
+    font-weight: bold;
+}
+
+.input__field {
+    width: 250px; /* Điều chỉnh chiều rộng cho trường nhập liệu */
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.3rem;
+}
+
+/* Radio button styling */
+.row {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.row div {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.contact__field {
+	display: flex;
+	align-items: center;
+	gap: 4px;
+}
+
+/* Select and button styling */
+#contactSelect {
+    width: 150px;
+    border: 1px solid #ccc;
+    border-radius: 0.3rem;
+}
+
+#submit {
+	width: 100px;
+	padding: 0.8rem;
+}
+
+.list__field,
+.checkBox__field {
+	display: flex;
+	align-items: center;
+	gap: 4px;
+}
+
+#submit {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-color: #0056b3;
+}

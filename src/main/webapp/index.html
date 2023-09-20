@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./styles.css" type="text/css"/>
+	<title>Web Survey</title>
+</head>
+<body>
+	<img class="logo" src="./images.jpg" alt="Logo">
+	<h2 class="header">Survey</h2>
+	<p>If you have a moment, we'd appreciate it if you would fill out this survey.</p>	
+	<h2 class="header">Your information</h2>
+	<form action="userInfo" method="post">
+		<input type="hidden" name="action" value="add">
+		<div class="list__field">
+			<label for="firstName">First Name</label>
+			<input type="text" name="firstName" id="firstName" class="input__field" autocomplete="off">
+		</div>
+		<div class="list__field">
+			<label for="lastName">Last Name</label>
+			<input type="text" name="lastName" id="lastName" class="input__field" autocomplete="off">
+		</div>
+		<div class="list__field">
+			<label for="userEmail">Email</label>
+			<input type="email" name="email" id="userEmail" class="input__field" autocomplete="off">
+		</div>
+		<div class="list__field">
+			<label for="dateBirth">Date of Birth</label>
+			<input type="text" name="dateBirth" id="dateBirth" class="input__field" autocomplete="off">
+		</div>
+		<h2 class="header">How did you hear about us?</h2>
+		<div class="row">
+		  <div>
+		    <input type="radio" id="searchEngine" name="hearAboutUs" value="searchEngine" checked required/>
+		    <label for="searchEngine">Search engine</label>
+		  </div>
+		  <div>
+		    <input type="radio" id="wordOfMouth" name="hearAboutUs" value="wordOfMouth" required/>
+		    <label for="wordOfMouth">Word of mouth</label>
+		  </div>
+		  <div>
+		    <input type="radio" id="socialMedia" name="hearAboutUs" value="socialMedia" required/>
+		    <label for="socialMedia">Social Media</label>
+		  </div>
+		  <div>
+		    <input type="radio" id="other" name="hearAboutUs" value="other" required/>
+		    <label for="other">Other</label>
+		  </div>
+		</div>
+		<h2 class="header">Would you like to receive announcements about new CDs and special offers?</h2>
+		  <div class="checkBox__field">
+		    <input type="checkbox" id="yesSubscribe" name="subscription" value="yes" />
+		    <label for="yesSubscribe">Yes, I'd like that.</label>
+		  </div>
+		  <div class="checkBox__field">
+		    <input type="checkbox" id="noSubscribe" name="subscription" value="no" />
+		    <label for="noSubscribe">No, thank you.</label>
+		  </div>
+		  <div class="contact__field">
+		      <p class="contact__content">Please contact me by:</p>
+		      <select name="contactMethod" id="contactSelect">
+		          <option value="both">Email or postal mail</option>
+		          <option value="email">Email only</option>
+		          <option value="post">Postal mail only</option>
+		      </select>
+		  </div>
+		<input type="submit" value="Submit" id="submit">
+	</form>
+</body>
+</html>
